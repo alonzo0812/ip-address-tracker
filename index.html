@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <title>Frontend Mentor | IP Address Tracker</title>
+</head>
+<body>
+  <main>
+    <div class="bg-div">
+      <img src="images/pattern-bg-desktop.png" alt="background picture">
+    </div>
+  
+  
+    <div class="float-div">
+      <div class="text-div">
+        <h1>IP Address Tracker</h1>
+      </div>
+      <div class="text-div">
+        <input type="text" placeholder="Search for any IP address or domain" id="input-text">
+        <button type="submit" id="submit"></button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14"><path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6"/></svg>
+      </div>
+      <div class="info-div">
+        <div class="info-card">
+          <h2>IP ADDRESS</h2>
+          <p id="ip-text">Enter an IP address!</p>
+        </div>
+        <div class="info-card">
+          <h2>LOCATION</h2>
+          <p id="location-text">London</p>
+        </div>
+        <div class="info-card">
+          <h2>TIMEZONE</h2>
+          <p id="timezone-text">UTC + 1:00</p>
+        </div>
+        <div class="info-card">
+          <h2>ISP</h2>
+          <p id="isp-text">ISP shown here</p>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div id="map">
+  
+    </div>  
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/alonzo0812" target="_blank">John Leomarc Alonzo</a>.
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+  <script src="index.js"></script>
+</body>
+</html>
